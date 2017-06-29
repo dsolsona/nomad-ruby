@@ -171,7 +171,7 @@ module Nomad
       end
 
       LABELS_MAP.each do |l,c|
-        if (item = (t / c).floor(0)) > 0
+        if (item = (t / c).floor > 0
           str << String(item) << l
           t -= (item * c)
         end
